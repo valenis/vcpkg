@@ -13,9 +13,18 @@ jobs:
   pool:
     vmImage: 'ubuntu-16.04'
 
+  strategy:
+    maxParallel: 2
+    matrix:
+      debug:
+        _configuration: Debug
+      release:
+        _configuration: Release
+  timeoutInMinutes: 10
+
   steps:
-  - script: echo Linux Hello, world!
-    displayName: 'Linux Run a one-line script'
+  - script: echo Linux $(_configuration) Hello, world!
+    displayName: 'Linux $(_configuration) Run a one-line script'
 
   - script: |
       echo Linux Add other tasks to build, test, and deploy your project.
