@@ -35,7 +35,7 @@ jobs:
   - script: |
       echo macOS Add other tasks to build, test, and deploy your project.
       echo macOS See https://aka.ms/yaml
-    displayName: 'macOS Run a multi-line script'
+    displayName: 'macOS Run a multi-line script update'
 
 
 - job: Windows
