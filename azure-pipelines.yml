@@ -11,13 +11,28 @@ jobs:
 - job: Linux
   
   pool:
-    vmImage: 'Ubuntu-16.04'
+    vmImage: 'ubuntu-16.04'
 
   steps:
-  - script: echo Hello, world!
-    displayName: 'Run a one-line script'
+  - script: echo Linux Hello, world!
+    displayName: 'Linux Run a one-line script'
 
   - script: |
-      echo Add other tasks to build, test, and deploy your project.
-      echo See https://aka.ms/yaml
-    displayName: 'Run a multi-line script'
+      echo Linux Add other tasks to build, test, and deploy your project.
+      echo Linux See https://aka.ms/yaml
+    displayName: 'Linux Run a multi-line script'
+
+
+- job: macOS
+  
+  pool:
+    vmImage: 'macOS-10.13'
+
+  steps:
+  - script: echo macOS Hello, world from!
+    displayName: 'macOS Run a one-line script'
+
+  - script: |
+      echo macOS Add other tasks to build, test, and deploy your project.
+      echo macOS See https://aka.ms/yaml
+    displayName: 'macOS Run a multi-line script'
