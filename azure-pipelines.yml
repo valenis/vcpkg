@@ -36,3 +36,18 @@ jobs:
       echo macOS Add other tasks to build, test, and deploy your project.
       echo macOS See https://aka.ms/yaml
     displayName: 'macOS Run a multi-line script'
+
+
+- job: Windows
+  
+  pool:
+    vmImage: 'windows-2019'
+
+  steps:
+  - script: echo Windows Hello, world from!
+    displayName: 'Windows Run a one-line script'
+
+  - script: |
+      echo Windows Add other tasks to build, test, and deploy your project.
+      echo Windows See https://aka.ms/yaml
+    displayName: 'Windows Run a multi-line script'
