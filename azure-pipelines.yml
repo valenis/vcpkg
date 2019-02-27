@@ -1,4 +1,4 @@
-# Starter pipeline update again
+# Starter pipeline
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -23,19 +23,19 @@ jobs:
     displayName: 'Linux Run a multi-line script'
 
 
-- job: macOS
-  
-  pool:
-    vmImage: 'macOS-10.13'
-
-  steps:
-  - script: echo macOS Hello, world from!
-    displayName: 'macOS Run a one-line script'
-
-  - script: |
-      echo macOS Add other tasks to build, test, and deploy your project.
-      echo macOS See https://aka.ms/yaml
-    displayName: 'macOS Run a multi-line script update'
+#- job: macOS
+#  
+#  pool:
+#    vmImage: 'macOS-10.13'
+#
+#  steps:
+#  - script: echo macOS Hello, world from!
+#    displayName: 'macOS Run a one-line script'
+#
+#  - script: |
+#      echo macOS Add other tasks to build, test, and deploy your project.
+#      echo macOS See https://aka.ms/yaml
+#    displayName: 'macOS Run a multi-line script update'
 
 
 - job: Windows
