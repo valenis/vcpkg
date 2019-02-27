@@ -5,6 +5,10 @@ Vcpkg helps you manage C and C++ libraries on Windows, Linux and MacOS. This too
 
 For short description of available commands, run `vcpkg help`.
 
+## Build & Test Status
+
+Azure DevOps [![Build Status](https://dev.azure.com/vcpkg/public/_apis/build/status/vcpkg-ci?branchName=master)](https://dev.azure.com/vcpkg/public/_build/latest?definitionId=1&branchName=master)
+
 ## Quick Start
 Prerequisites:
 - Windows 10, 8.1, 7, Linux, or MacOS
